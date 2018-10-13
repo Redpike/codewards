@@ -1,5 +1,6 @@
 ## Codewars Challenges Solutions in Python 3
 
-#### [d001 - Highest and Lowest](./d001)
-#### [d002 - Reverse words](./d002)
-#### [d003 - Printer Errors](./d003)
+#### [d001 - Highest and Lowest](./d001) `8 kyu`
+#### [d002 - Reverse words](./d002) `7 kyu`
+#### [d003 - Printer Errors](./d003) `7 kyu`
+#### [d004 - Write Number in Expanded Form](./d004) `6 kyu`
