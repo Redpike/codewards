@@ -6,3 +6,4 @@
 #### [d004 - Write Number in Expanded Form](./d004) `6 kyu`
 #### [d005 - Sort the odd](./d005) `6 kyu`
 #### [d006 - Reverse or rotate?](./d006) `6 kyu`
+#### [d007 - Find the odd int](./d007) `6 kyu`
