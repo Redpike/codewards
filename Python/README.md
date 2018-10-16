@@ -8,3 +8,4 @@
 #### [d006 - Reverse or rotate?](./d006) `6 kyu`
 #### [d007 - Find the odd int](./d007) `6 kyu`
 #### [d008 - Gap in Primes](./d008) `5 kyu`
+#### [d009 - Mexican wave](./d009) `6 kyu`
