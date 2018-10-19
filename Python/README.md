@@ -11,3 +11,5 @@
 #### [d009 - Mexican wave](./d009) `6 kyu`
 #### [d010 - String incrementer](./d010) `5 kyu`
 #### [d011 - Descending Order](./d011) `7 kyu`
+#### [d011 - Descending Order](./d011) `7 kyu`
+#### [d012 - Jaden Casing Strings](./d012) `7 kyu`
