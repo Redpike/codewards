@@ -14,3 +14,4 @@
 #### [d011 - Descending Order](./d011) `7 kyu`
 #### [d012 - Jaden Casing Strings](./d012) `7 kyu`
 #### [d013 - Word a10n (abbreviation)](./d013) `6 kyu`
+#### [d014 - Title Case](./d014) `6 kyu`
