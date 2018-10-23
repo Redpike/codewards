@@ -16,3 +16,4 @@
 #### [d013 - Word a10n (abbreviation)](./d013) `6 kyu`
 #### [d014 - Title Case](./d014) `6 kyu`
 #### [d015 - Dashatize it](./d015) `6 kyu`
+#### [d016 - Password maker](./d016) `7 kyu`
