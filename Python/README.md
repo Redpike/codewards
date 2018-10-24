@@ -17,3 +17,5 @@
 #### [d014 - Title Case](./d014) `6 kyu`
 #### [d015 - Dashatize it](./d015) `6 kyu`
 #### [d016 - Password maker](./d016) `7 kyu`
+#### [d017 - Moves in squared strings (II)](./d017) `6 kyu`
+#### [d018 - Count characters in your string](./d018) `6 kyu`
