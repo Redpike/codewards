@@ -20,3 +20,4 @@
 #### [d017 - Moves in squared strings (II)](./d017) `6 kyu`
 #### [d018 - Count characters in your string](./d018) `6 kyu`
 #### [d019 - Who likes it?](./d019) `6 kyu`
+#### [d020 - Unary function chainer](./d020) `6 kyu`
