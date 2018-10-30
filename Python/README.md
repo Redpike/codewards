@@ -23,3 +23,4 @@
 #### [d020 - Unary function chainer](./d020) `6 kyu`
 #### [d021 - Extract the domain name from a URL](./d021) `5 kyu`
 #### [d022 - Consecutive strings](./d022) `6 kyu`
+#### [d023 - Vasya - Clerk](./d023) `6 kyu`
