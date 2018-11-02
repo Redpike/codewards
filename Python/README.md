@@ -26,3 +26,4 @@
 #### [d023 - Vasya - Clerk](./d023) `6 kyu`
 #### [d024 - Highest Rank Number in an Array](./d024) `6 kyu`
 #### [d025 - Persistent Bugger](./d025) `6 kyu`
+#### [d026 - The Enigma Machine - Part 1: The Plugboard](./d026) `6 kyu`
