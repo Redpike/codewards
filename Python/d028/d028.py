@@ -16,8 +16,11 @@ def count_Kprimes(k, start, end):
 
 
 def puzzle(s):
-    # your code
-    pass
+    a = count_Kprimes(1, 0, s)
+    b = count_Kprimes(3, 0, s)
+    c = count_Kprimes(7, 0, s)
+
+    return sum(i + j + k == s for i in a for j in b for k in c)
 
 
 def test():
@@ -29,7 +32,7 @@ def test():
 
 
 def main():
-    print(count_Kprimes(2, 0, 100))
+    test()
 
 
 if __name__ == '__main__':
