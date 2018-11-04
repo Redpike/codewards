@@ -1,6 +1,18 @@
+def find_k(number):
+    result = 0
+    i = 2
+    while i * i <= number:
+        while number % i == 0:
+            number /= i
+            result += 1
+        i += 1
+    if number > 1:
+        result += 1
+    return result
+
+
 def count_Kprimes(k, start, end):
-    # your code
-    pass
+    return [number for number in range(start, end + 1) if find_k(number) == k]
 
 
 def puzzle(s):
@@ -17,7 +29,7 @@ def test():
 
 
 def main():
-    count_Kprimes(2, 4, 10)
+    print(count_Kprimes(2, 0, 100))
 
 
 if __name__ == '__main__':
