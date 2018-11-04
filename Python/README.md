@@ -11,7 +11,6 @@
 #### [d009 - Mexican wave](./d009) `6 kyu`
 #### [d010 - String incrementer](./d010) `5 kyu`
 #### [d011 - Descending Order](./d011) `7 kyu`
-#### [d011 - Descending Order](./d011) `7 kyu`
 #### [d012 - Jaden Casing Strings](./d012) `7 kyu`
 #### [d013 - Word a10n (abbreviation)](./d013) `6 kyu`
 #### [d014 - Title Case](./d014) `6 kyu`
@@ -28,3 +27,4 @@
 #### [d025 - Persistent Bugger](./d025) `6 kyu`
 #### [d026 - The Enigma Machine - Part 1: The Plugboard](./d026) `6 kyu`
 #### [d027 - RGB To Hex Conversion](./d027) `5 kyu`
+#### [d028 - k-Primes](./d028) `5 kyu`
