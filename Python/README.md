@@ -28,3 +28,4 @@
 #### [d026 - The Enigma Machine - Part 1: The Plugboard](./d026) `6 kyu`
 #### [d027 - RGB To Hex Conversion](./d027) `5 kyu`
 #### [d028 - k-Primes](./d028) `5 kyu`
+#### [d029 - Simple Fun #166: Best Match](./d029) `5 kyu`
