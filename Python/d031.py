@@ -47,9 +47,41 @@ thousands = [
 def number2words(n):
     words = []
     if n == 0:
-        words.append("zero")
-
-    return " ".join(words[])
+        return "zero"
+    number_str = str(n)
+    number_len = len(number_str)
+    groups = (number_len + 2) // 3
+    number_str = number_str.zfill(groups * 3)
+    for i in range(0, groups * 3, 3):
+        hundreds, tns, unts, = int(number_str[i]), int(number_str[i + 1]), int(number_str[i + 2])
+        group = groups - (i / 3 + 1)
+        if hundreds >= 1:
+            words.append(units[hundreds])
+            if tns > 0:
+                words.append(" hundred ")
+            else:
+                words.append(" hundred")
+        if tns > 1:
+            words.append(tens[tns])
+            if unts >= 1:
+                words.append("-" + units[unts])
+        elif tns == 1:
+            if unts >= 1:
+                words.append(teens[unts])
+            else:
+                words.append(tens[tns])
+        else:
+            if unts >= 1:
+                if hundreds > 0:
+                    words.append(" " + units[unts])
+                else:
+                    words.append(units[unts])
+        if group >= 1 and (hundreds + tns + unts) > 0:
+            if tns > 0 or unts > 0 or groups > 1:
+                words.append(" " + thousands[int(group)] + " ")
+            else:
+                words.append(" " + thousands[int(group)])
+    return "".join(words).strip()
 
 
 def test():
