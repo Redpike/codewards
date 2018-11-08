@@ -30,3 +30,4 @@
 #### [d028 - k-Primes](./d028) `5 kyu`
 #### [d029 - Simple Fun #166: Best Match](./d029) `5 kyu`
 #### [d030 - Maximum subarray sum](./d030) `5 kyu`
+#### [d031 - Write out numbers](./d031) `5 kyu`
