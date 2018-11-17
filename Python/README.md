@@ -33,3 +33,4 @@
 #### [d031 - Write out numbers](./d031) `5 kyu`
 #### [d032 - Working With Coloured Numbers](./d032) `5 kyu`
 #### [d033 - Primes with Even Digits](./d033) `5 kyu`
+#### [d034 - Mixbonacci](./d034) `5 kyu`
