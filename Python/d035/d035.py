@@ -1,14 +1,40 @@
-directions = {
-    'NORTH': [0, 1],
-    'SOUTH': [0, -1],
-    'WEST': [-1, 0],
-    'EAST': [1, 0]
-}
+import re
+
+N, S, E, W = "NORTH", "SOUTH", "EAST", "WEST"
+DIRS = {N: (0, 1), S: (0, -1), E: (1, 0), W: (-1, 0)}
+TURNS = {"LEFT": {DIRS[N]: DIRS[W], DIRS[S]: DIRS[E], DIRS[E]: DIRS[N], DIRS[W]: DIRS[S]},
+         "RIGHT": {DIRS[N]: DIRS[E], DIRS[S]: DIRS[W], DIRS[E]: DIRS[S], DIRS[W]: DIRS[N]}}
+
+PATTERN = re.compile(r"Head (?P<head>\w+)" +
+                     r"|Take the (?P<nTurn>\d*)(?P<isNext>\w+) (?P<turnTo>LEFT|RIGHT)" +
+                     r"|Go straight on for (?P<straight>[\d.]+)(?P<unit>k?m)" +
+                     r"|(?P<flip>Turn around!)")
 
 
 def sat_nav(directions):
-    # Your code here!
-    pass
+    def go(d):
+        return x + d * moves[0], y + d * moves[1]
+
+    x, y, moves = 0, 0, (0, 0)
+    for i in range(len(directions) - 1):
+        d, m = 0, PATTERN.match(directions[i])
+
+        if m.group('straight'):
+            d = round(10 * float(m.group('straight')))
+            if m.group('unit') == 'm': d //= 1000
+            x, y = go(d)
+
+        elif m.group('turnTo'):
+            d = 10 * (m.group('isNext') == 'NEXT' or int(m.group('nTurn')))
+            x, y = (z - z % (10 if dz > 0 else -10) for z, dz in zip(go(d), moves))
+            moves = TURNS[m.group('turnTo')][moves]
+
+        elif m.group('flip'):
+            moves = -moves[0], -moves[1]
+        elif m.group('head'):
+            moves = DIRS[m.group('head')]
+
+    return [x, y]
 
 
 def test():
