@@ -6,3 +6,5 @@ export const summation = (num: number) => {
 
   return sum;
 }
+
+console.log(summation(8));

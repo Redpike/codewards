@@ -7,4 +7,5 @@ exports.summation = (num) => {
     }
     return sum;
 };
+console.log(exports.summation(8));
 //# sourceMappingURL=d001.js.map
