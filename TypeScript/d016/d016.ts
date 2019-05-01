@@ -1,3 +1,13 @@
+function sortScores(scores: Map<string, number>) {
+  return new Map([...scores.entries()].sort((a, b) => {
+    if (a[1] === b[1]) {
+      return a[0] > b[0] ? 1 : -1;
+    } else {
+      return b[1] - a[1];
+    }
+  }));
+}
+
 export class G964 {
 
   public static rank(st, we, n) {
@@ -8,8 +18,7 @@ export class G964 {
     } else {
       const lengths = this.getLengthsOfFirstnames(st);
       const scores = this.computeScores(st, lengths, we);
-      const sortedScores = this.sortScores(scores);
-      console.log(sortedScores);
+      const sortedScores = sortScores(scores);
 
       return Array.from(sortedScores.keys())[n - 1];
     }
@@ -27,10 +36,11 @@ export class G964 {
   }
 
   private static computeLengthOfFirstname(firstname: string): number {
-    let length = 0;
+    let length = firstname.length;
 
     firstname.split('').forEach(char => {
-      length += char.charCodeAt(0) - 96;
+      const value = char.charCodeAt(0) - 96;
+      length += value;
     });
 
     return length;
@@ -46,16 +56,20 @@ export class G964 {
 
     return scores;
   }
-
-  private static sortScores(scores: Map<string, number>) {
-    return new Map([...scores.entries()].sort((a, b) => b[1] - a[1]));
-  }
 }
 
-const testString = 'COLIN,AMANDBA,AMANDAB,CAROL,PauL,JOSEPH';
-const weights = [1, 4, 4, 5, 2, 1];
-const n = 4;
+console.log(G964.rank('COLIN,AMANDBA,AMANDAB,CAROL,PauL,JOSEPH', [1, 4, 4, 5, 2, 1], 4)); // PauL
+console.log(G964.rank('COLIN,AMANDBA,AMANDAB,CAROL,PauL,JOSEPH', [1, 4, 4, 5, 2, 1], 10));
+console.log(G964.rank('', [1, 4, 4, 5, 2, 1], 4));
 
-console.log(G964.rank(testString, weights, n));
-console.log(G964.rank(testString, weights, 10));
-console.log(G964.rank('', weights, n));
+// "Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin", [4, 2, 1, 4, 3, 1, 2], 4, "Benjamin"
+console.log(G964.rank('Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin', [4, 2, 1, 4, 3, 1, 2], 4));
+
+// "Elijah,Chloe,Elizabeth,Matthew,Natalie,Jayden", [1, 3, 5, 5, 3, 6], 2, "Matthew"
+console.log(G964.rank('Elijah,Chloe,Elizabeth,Matthew,Natalie,Jayden', [1, 3, 5, 5, 3, 6], 2));
+
+// "Aubrey,Olivai,Abigail,Chloe,Andrew,Elizabeth", [3, 1, 4, 4, 3, 2], 4, "Abigail"
+console.log(G964.rank('Aubrey,Olivai,Abigail,Chloe,Andrew,Elizabeth', [3, 1, 4, 4, 3, 2], 4));
+
+// "Lagon,Lily", [1, 5], 2, "Lagon"
+console.log(G964.rank('Lagon,Lily', [1, 5], 2));

@@ -6,7 +6,7 @@ Each letter of a firstname has a value which is its rank in the English alphabet
 
 The length of the firstname is added to the sum of these ranks hence a number `n`. An array of random weights is linked to the firstnames and each `n` is multiplied by its corresponding weight to get what they call a `winning number`.
 
-## Example
+## Rules
 
 names: `COLIN,AMANDBA,AMANDAB,CAROL,PauL,JOSEPH` weights: `[1, 4, 4, 5, 2, 1]`
 
