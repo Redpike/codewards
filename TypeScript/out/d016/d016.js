@@ -22,8 +22,7 @@ class G964 {
             const lengths = this.getLengthsOfFirstnames(st);
             const scores = this.computeScores(st, lengths, we);
             const sortedScores = sortScores(scores);
-            console.log(scores, sortedScores);
-            return '';
+            return Array.from(sortedScores.keys())[n - 1];
         }
     }
     static getLengthsOfFirstnames(string) {
