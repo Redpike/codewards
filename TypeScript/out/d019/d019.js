@@ -6,12 +6,12 @@ class G964 {
 }
 G964.dirReduc = (arr) => {
     for (let i = 0; i < arr.length; i++) {
-        if (NORTH_SOUTH.indexOf(arr[i]) > -1 && NORTH_SOUTH.indexOf(arr[i + 1]) > -1) {
+        if (arr[i] !== arr[i + 1] && NORTH_SOUTH.indexOf(arr[i]) > -1 && NORTH_SOUTH.indexOf(arr[i + 1]) > -1) {
             arr.splice(i, 2);
             i -= 2;
             continue;
         }
-        if (WEST_EAST.indexOf(arr[i]) > -1 && WEST_EAST.indexOf(arr[i + 1]) > -1) {
+        if (arr[i] !== arr[i + 1] && WEST_EAST.indexOf(arr[i]) > -1 && WEST_EAST.indexOf(arr[i + 1]) > -1) {
             arr.splice(i, 2);
             i -= 2;
             continue;
