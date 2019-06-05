@@ -2,7 +2,7 @@ export function countRedBeads(n: number): number {
   if (n < 2) {
     return 0;
   } else {
-    return (n * 2) - 2;
+    return (n - 1) * 2;
   }
 }
 

@@ -5,7 +5,7 @@ function countRedBeads(n) {
         return 0;
     }
     else {
-        return (n * 2) - 2;
+        return (n - 1) * 2;
     }
 }
 exports.countRedBeads = countRedBeads;
