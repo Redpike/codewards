@@ -6,3 +6,4 @@
 #### [d004 - Calculate average](./src/main/java/pl/com/redpike/d004) `8 kyu` `Java 8`
 #### [d005 - String ends with?](./src/main/java/pl/com/redpike/d005) `7 kyu` `Java 8`
 #### [d006 - Alphabet war](./src/main/java/pl/com/redpike/d006) `7 kyu` `Java 8`
+#### [d007 - What's a Perfect Power anyway?](./src/main/java/pl/com/redpike/d007) `5 kyu` `Java 8`
